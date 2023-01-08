@@ -1,0 +1,171 @@
+.nav-ul li {
+    display: inline-block;
+    padding: 15px;
+
+}
+
+.nav-ul {
+    padding-left: 50px;
+    margin: 0;
+    background-color: rgb(200, 123, 255);
+    /* background-color: rgb(255, 140, 217); */
+    /* background-color: rgb(220, 221, 222); */
+    /* background-color: rgb(55, 253, 240); */
+    /* background-color: rgb(1, 255, 141); */
+}
+
+.nav-ul li a {
+    color: white;
+    /* color: rgb(6, 23, 53); */
+    /* color: rgb(14, 19, 62); */
+    /* color: white; */
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    /* margin: 0px 10px; */
+    /* font-size: 1.4rem; */
+    /* font-weight: bolder; */
+    /* text-decoration: none; */
+    display: inline-block;
+    /* color: white; */
+    /* font-family: 'Josefin Sans', sans-serif; */
+    position: relative;
+    transition: .3s;
+    position: relative;
+
+}
+
+.nav-ul li a::after {
+    content: ' ';
+    height: 2.5px;
+    width: 0%;
+    background-color: red;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -2px;
+    right: 0px;
+    transition: .5s;
+}
+
+.nav-ul li a:hover::after {
+    width: 100%;
+    left: 0px;
+}
+
+.nav-ul li a:hover {
+    color: rgb(46, 10, 47);
+
+}
+
+.input-hed {
+    width: 60%;
+    height: 100vh;
+    /* border: 2px solid red; */
+    margin-left: 30%;
+    margin-top: 40px;
+}
+
+.Input-Box input {
+    /* padding: 20px; */
+    margin: 20px;
+    width: 35%;
+    height: 4vh;
+    border-radius: 15px;
+    border: 2px solid rgb(200, 123, 255);
+}
+
+.btn button {
+    margin-left: 10%;
+    font-weight: 700;
+    padding: 6px;
+    width: 15%;
+    border: none;
+    color: white;
+    background-color: rgb(12, 12, 71);
+}
+
+.Home-Page {
+    margin-left: 30%;
+    margin-top: 8%;
+    /* border: 2px solid red; */
+    width: 25%;
+    height: 30vh;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 2px 2px 10px 3px;
+}
+
+.Home-Page h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: green;
+    transition: .5s ease-in-out;
+    padding-top: 25px;
+}
+
+.Home-Page h2:hover {
+    color: red;
+
+}
+
+.Home-Page p {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+
+}
+
+.Home-Page button {
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 10%;
+    font-weight: 700;
+    width: 29%;
+    background-color: rgb(10, 10, 57);
+    color: white;
+    transition: .5s ease-in-out;
+    border: none;
+}
+
+.Home-Page button:hover {
+    background-color: aqua;
+    color: rgb(10, 10, 57);
+    cursor: pointer;
+    /* margin-left: 15%; */
+    box-shadow: 2px 2px 10px 3px ;
+/* font-size: 17px; */
+    /* border: none; */
+    /* font-weight: 100; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
